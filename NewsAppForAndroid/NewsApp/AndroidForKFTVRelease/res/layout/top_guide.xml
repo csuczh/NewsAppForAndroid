@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slideMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/top_bg" >
+        </android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:id="@+id/ivPreviousButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/previous_button"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/next_button"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@+id/ivPreviousButton"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/menu_bg"
+            android:visibility="invisible" />
+    </RelativeLayout>
+   <!-- 头条新闻显示 -->
+   <!-- 
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <android.support.v4.view.ViewPager
+           android:id="@+id/topnew"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           >
+       </android.support.v4.view.ViewPager>
+    </LinearLayout> -->
+    <LinearLayout
+        android:id="@+id/linearLayoutContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/fragment_bottom_normal">
+      
+    </LinearLayout>
+
+</LinearLayout>

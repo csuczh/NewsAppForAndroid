@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidForKFTVRelease</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="user">用户名</string>
+    <string name="pwd">密码</string>
+    <string name="repwd">重新输入密码</string>
+    <string name="news">新闻</string>
+    <string name="picture">图片</string>
+    <string name="vedio">视频</string>
+    <string name="life">生活助手</string>
+    <string name="app_name1">BitmapFun</string>
+    <string name="app_description">This is a sample application for the Android Training class
+        &quot;Displaying Bitmaps Efficiently&quot;
+        (http://developer.android.com/training/displaying-bitmaps/display-bitmap.html). It is not
+        designed to be a full reference application but to demonstrate the concepts discussed in
+        training course.</string>
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+    <string name="vitamio_demo_name">VitamioDemo</string>
+     <string name="vitamio_name">Vitamio</string>
+    <string name="vitamio_init_decoders">Initializing decoders…</string>
+    <string name="vitamio_videoview_error_title">Cannot play video</string>
+    <string name="vitamio_videoview_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+		this device.</string>
+    <string name="vitamio_videoview_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="vitamio_videoview_error_button">OK</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+</resources>

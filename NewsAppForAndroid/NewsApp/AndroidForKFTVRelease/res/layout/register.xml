@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 注册的界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/reuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user" 
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/inputreuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reuser"
+        android:layout_toRightOf="@+id/reuser" />
+
+    <TextView
+        android:id="@+id/repwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reuser"
+        android:layout_marginTop="40dp"
+        android:text="@string/pwd" />
+
+    <EditText
+        android:id="@+id/inputrepwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/repwd"
+        android:layout_below="@+id/inputreuser"
+        android:layout_toRightOf="@+id/repwd" 
+        android:layout_alignLeft="@+id/inputreuser"/>
+
+    <TextView
+        android:id="@+id/repwd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repwd"
+        android:layout_marginTop="80dp"
+        android:text="重新输入" />
+
+    <EditText
+        android:id="@+id/inputrepwd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/repwd2"
+        android:layout_below="@+id/inputrepwd"
+        android:layout_toRightOf="@+id/repwd2" 
+        android:layout_alignLeft="@+id/inputreuser"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputrepwd2"
+        android:layout_marginTop="100dp" 
+        android:layout_marginLeft="40dp">
+
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登录界面的view -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/inputuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user"
+        android:layout_toRightOf="@+id/user" />
+    
+    <TextView
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:text="@string/pwd" 
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/inputpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inputuser"
+        android:layout_below="@+id/inputuser"
+        android:layout_toRightOf="@+id/pwd" 
+        android:layout_alignBaseline="@+id/pwd"/>
+
+   <LinearLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/inputpwd"
+      android:layout_marginTop="150dp"
+      android:layout_marginLeft="40dp"
+       >
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录" />
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消" />  
+</LinearLayout>
+</RelativeLayout>

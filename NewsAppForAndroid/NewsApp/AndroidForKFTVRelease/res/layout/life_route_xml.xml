@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:id="@+id/myradio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RadioGroup
+        android:id="@+id/mygroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="公交车" />
+
+        <RadioButton
+            android:id="@+id/car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="汽车" />
+
+        <RadioButton
+            android:id="@+id/walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="步行" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/mygroupfirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="时间最少" />
+
+        <RadioButton
+            android:id="@+id/fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费用最低" />
+
+        <RadioButton
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离最短" />
+    </RadioGroup>
+   </LinearLayout>
+    <TableLayout
+        android:id="@+id/MyTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/myradio">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起点 :" />
+
+            <EditText
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:maxLength="200"
+                android:text="河南大学金明校区" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="查找" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="终点 ：" />
+
+            <EditText
+                android:id="@+id/end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:maxLength="200"
+                android:text="包公祠" />
+
+            <Button
+                android:id="@+id/nextroute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="下一条" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/MyTable">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+    </LinearLayout>
+     <LinearLayout
+	        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="10dip"
+	        android:layout_alignWithParentIfMissing="false"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="false" >
+		
+			 <Button
+			     android:id="@+id/pre"
+			     android:layout_width="fill_parent"
+			     android:layout_height="fill_parent"
+			     android:layout_weight="1.0"
+			     android:background="@drawable/pre_"
+			     android:layout_marginLeft="2dip"
+			     android:layout_marginRight="2dip" />
+			 <Button
+			     android:id="@+id/next"
+			     android:layout_width="fill_parent"
+			     android:layout_height="fill_parent"
+			     android:layout_weight="1.0"
+			     android:background="@drawable/next_"
+			     android:layout_marginLeft="2dip"
+			     android:layout_marginRight="2dip" />
+	
+	    </LinearLayout>
+</RelativeLayout>

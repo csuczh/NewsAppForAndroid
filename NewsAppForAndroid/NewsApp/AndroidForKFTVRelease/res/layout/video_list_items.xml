@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <!-- android:descendantFocusability="blocksDescendants" -->
+
+    <ImageView
+        android:id="@+id/item_video_pic_id"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/item_video_title_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/app_name"
+            android:textSize="13pt" />
+
+        <TextView
+            android:id="@+id/item_video_summry_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_video_title_id"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/app_name"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/item_video_source_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/item_video_summry_id"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@+id/item_video_time_id"
+            android:text="@string/app_name"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/item_video_time_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toLeftOf="@+id/item_video_count_id"
+            android:text="@string/hello_world" />
+
+        <TextView
+            android:id="@+id/item_video_count_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+            android:text="@string/hello_world" />
+    </RelativeLayout>
+
+</LinearLayout>

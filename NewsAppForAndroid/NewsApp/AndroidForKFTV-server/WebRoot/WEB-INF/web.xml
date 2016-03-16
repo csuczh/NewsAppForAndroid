@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>AndroidForKFTV</display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HandleRequest</servlet-name>
+    <servlet-class>action.HandleRequest</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name </display-name>
+    <servlet-name>PictureHandle</servlet-name>
+    <servlet-class>action.PictureHandle</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name </display-name>
+    <servlet-name>VideoHandle</servlet-name>
+    <servlet-class>action.VideoHandle</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name </display-name>
+    <servlet-name>MusicHandle</servlet-name>
+    <servlet-class>action.MusicHandle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HandleRequest</servlet-name>
+    <url-pattern>/servlet/HandleRequest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PictureHandle</servlet-name>
+    <url-pattern>/servlet/PictureHandle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VideoHandle</servlet-name>
+    <url-pattern>/servlet/VideoHandle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MusicHandle</servlet-name>
+    <url-pattern>/servlet/MusicHandle</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
